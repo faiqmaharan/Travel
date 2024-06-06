@@ -1,0 +1,1363 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MuteriDunyo</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+<!-- gogle font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+<!-- gogel font end -->
+    
+    <!-- scroll -->
+     <script src="https://unpkg.com/scrollreveal"></script>
+    <!-- scroll -->
+    <style>
+
+        body{
+
+        }
+
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            text-decoration: none;
+            list-style: none;
+            scroll-behavior: smooth;
+            font-family:'Roboto',sans-serif ;
+        }
+
+/*navbar*/
+
+#navbar{
+    background: #f9f9f9;
+     box-shadow: rgba(0,0,0,2.1) 10px 4px 12px;
+    
+}
+
+#logo{
+    font-size: 36px;
+    font-weight: 700;
+    color: black;
+    text-shadow: 0px 1px 1px black;
+    margin-bottom: 5px;
+}
+
+#logo span{
+    color: #ffa500;
+    
+}
+
+@media only screen and (max-width: 600px){
+    #logo .navbar-brand{
+display: none;
+    }
+}
+
+.navbar-toggler span{
+color: #ffa500;
+}
+
+.navbar-nav{
+margin: 0 auto;
+}
+
+.nav-item .nav-link{
+    margin: 1px;
+    background: #f9f9f9;
+    font-size: 16px;
+    font-weight: 800px;
+    color: black;
+    border-radius: 3px;
+    transition: 0.5s ease;
+}
+
+.nav-item .nav-link:hover{
+    background:#ffa500 ;
+    color: white;
+}
+
+#navbar form button{
+    background: orange;
+    color: white;
+    border: none;
+}
+/*navbar end*/
+
+/*home section*/
+.home{
+height:90vh;
+background-image: url(https://img.freepik.com/premium-photo/japan-you-can-see-mt-fuji-twilight_674594-30611.jpg);
+background-size: cover;
+background-repeat: no-repeat;
+margin-top: 5rem;
+}
+
+.home .content{
+    text-align: center;
+    padding-top: 200px;
+}
+
+.home .content h5{
+    color: white;
+    font-size: 38px;
+    font-weight: 600px;
+    text-shadow: 0px 1px 1px black;
+}
+
+.home .content h1{
+    color: white;
+    font-size: 70px;
+    font-weight: 600;
+    text-shadow: 0px 1px 1px black;
+    margin-top: 5px;
+}
+
+.home .content p{
+    color: white;
+    font-size: 20px;
+    font-weight: 600px;
+    text-shadow: 0px 1px 1px black;
+    margin-top: 5px;
+    margin-bottom: 30px;
+}
+
+  .content span {
+            margin-left: 10px;
+        }
+        .content span::before {
+            content: "France";
+            color: orange;
+            text-shadow: 0px 10px 10px black;
+            animation: words 15s infinite;
+            background: transparent;
+            backdrop-filter: blur(3px);
+        }
+        .content span::after {
+            content: "";
+            position: absolute;
+          text-shadow: 0px 1px 1px black;
+            animation: cursor .8s infinite, typing 10s steps (10) infinite;
+        }
+
+        @keyframes words {
+             0% {
+                 content: "France";
+             }
+             10% {
+                 content: "Turkey";
+             }
+             20% {
+                 content: "London";
+             }
+             30% {
+                 content: "Italy";
+             }
+             40% {
+                 content: "Spain";
+             }
+             50% {
+                 content: "England";
+             }
+             60% {
+                 content: "Madura";
+             }
+             70% {
+                 content: "Arab";
+             }
+             80% {
+                 content: "Bali";
+             }
+             90% {
+                 content: "India";
+             }
+             
+        }
+
+        .home .content a{
+            padding: 10px;
+            background: white;
+            color: black;
+            letter-spacing: 2px;
+            font-weight: 550;
+            border-radius: 5px;
+            text-decoration: none;
+            transition: 0,5s;
+        }
+
+        .home .content a:hover{
+            background: orange;
+            color: white;
+        }
+
+        @media (max-width:850px){
+            .home{
+                background-position: 50%;
+            }
+        }
+
+        @media (max-width:450px) {
+            .home .content h5{
+               font-size: 30px;
+            }
+            .home .content h1{
+                font-size: 38px;
+            }
+            .home .content p{
+                font-size: 13px;
+            }
+
+
+        }
+
+/*home section end*/
+
+/*about*/
+
+.about{
+margin-top: 50px;
+background: #f9f9f;
+}
+.about .card {
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+.about .card img{
+    border-radius: 10px;
+}
+
+.about h2{
+    font-weight: 600px;
+    letter-spacing: 1px;
+}
+
+.about p{
+    font-weight: 500;
+}
+
+#about-btn{
+width: 150px;
+height: 40px;
+border-radius: 5px;
+background: #ffa500;
+color: white;
+letter-spacing: 2px;
+font-weight: 550px;
+transition: 0,5s ease;
+cursor: pointer;
+}
+
+#about-btn:hover{
+    background: darkorange;
+    color: black;
+    text-shadow:0px 1px 1px black ;
+}
+
+@media (max-width:450px) {
+           .intro{
+              text-align: center;
+              font-weight: 800;
+            }
+          
+        }
+
+/*about end*/
+
+/*SERVICE*/
+
+.service{
+    background: #f9f9f9;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+
+
+.service .card{
+    box-shadow: 0px 5px 5px -6px;
+    border:none;
+    cursor: pointer;
+}
+
+.service .card i{
+    font-size: 80px;
+    text-align: center;
+    color: #ffa500;
+    margin-top: 20px;
+}
+
+/*SERVICE END*/
+
+
+/*PACKAGES*/
+
+.packages{
+    min-height: 1000px;
+}
+
+
+.card:hover{
+    scale: 1.05;
+    transition: all .40s ease-in-out;
+}
+
+.main-txt{
+    font-weight: 600;
+    text-shadow: 0px 1px 1px black;
+}
+
+.main-txt h1 span{
+    color: #ffa500;
+}
+
+.packages .card{
+    border-radius: 5px;
+    border:none;
+    box-shadow: rgba(0,0,0,0.1) 0px 4px 12px;
+}
+
+
+.packages .card img{
+    border-radius: 5px;
+}
+
+.packages .card .card-body{
+    background: transparent;
+}
+
+.packages .card .card-body h3{
+    font-size: 25px;
+    font-weight: 600;
+}
+
+.packages .card-body .card-body p{
+    font-size: 15px;
+}
+
+.checked{
+    color: #ffa500;
+}
+
+.star i{
+    font-size: 15px;
+}
+
+.packages .card .card-body h6{
+    font-size: 20px;
+}
+
+.packages .card .card-body a{
+    padding: 10px;
+    text-decoration: none;
+    background: #ffa500;
+    color: white;
+    border-radius: 5px;
+}
+
+ .card-body a{
+    text-decoration: none;
+    color: black;
+    
+}
+
+.slide{
+    border-radius: 20px;
+}
+
+
+
+/*PACKAGES END*/
+
+
+
+/*gallery start*/
+
+.gallery{
+    background: #f99f9;
+    margin-bottom: 50px;
+    
+}
+
+
+.main-txt{
+    text-align: center;
+ 
+}
+
+
+
+/*gallery end*/
+
+/*book sction*/
+
+.book{
+    background: #f9f9f9;
+    padding: 50px;
+}
+
+.main-text h1{
+    text-shadow: 0px 1px 1px black;
+    font-weight: 600;
+}
+
+.main-text h1 span{
+    color: #ffa500;
+}
+
+.book .card{
+    border-radius: 10px;
+    box-shadow: 0 5px 5px -6px black;
+}
+
+.book .form-control{
+    margin-top: 12px;
+}
+
+.book form-input {
+    padding: 10px;
+    color: black;
+    border: none;
+    outline: none;
+    font-size: 15px;
+    border-radius: 10px;
+    box-shadow: 0 5px 5px -6px black;
+}
+
+.book form textarea{
+    border: none;
+    border-radius: 10px;
+    resize: none;
+    box-shadow: 0 5px 5px -6px black;
+    height: 20px;
+}
+
+.book .submit{
+    width: 100px;
+    font-size: 16px;
+    font-weight: 550;
+    background: #ffa500;
+    color: white;
+    margin-top: 10px;
+    transition: 0.5s;
+    height: 50px;
+    border-radius: 10px;
+}
+
+.book .submit:hover{
+    width: 120px;
+}
+
+.book .submit:active{
+    background: black;
+}
+
+
+@media (max-width765px){
+    .book{
+        padding: 0;
+    }
+
+    .main-text h1{
+        padding: 20px;
+    }
+} 
+
+/*book section end*/
+
+
+/*footer*/
+#footer{
+    width: 100%;
+    margin-top: 60px;
+    text-align: center;
+    background: #f9f9f9;
+}
+
+#footer h1{
+    font-weight: 600;
+    padding-top: 30px;
+    text-shadow: 0px 1px 1px black ;
+
+}
+
+#footer h1 span{
+    color: #ffa500;
+}
+
+.social-links i{
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 20px;
+    background: black;
+    color: white;
+   margin-bottom: 10px;
+    transition: 0.5s ease;
+    cursor: pointer;
+}
+
+.social-links i:hover{
+    background: #ffa500;
+}
+
+
+/*footer end*/
+
+       
+    </style>
+
+</head>
+<body>
+
+    <!-- NAVBAR -->
+
+     <nav id="navbar" class="navbar navbar-expand-lg fixed-top" >
+  <div class="container">
+    <a id="logo" class="navbar-brand" href=""><span>M</span>uteri<span>D</span>unyo</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
+      <span><i class="fa-solid fa-bars"></i></span>
+    </button>
+    <div class="collapse navbar-collapse" id="mynavbar">
+      <ul class="navbar-nav me-auto">
+        <li class="nav-item">
+          <a class="nav-link active" href="">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#about">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#service">Services</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#packagess">Packages</a>
+        </li>
+         <li class="nav-item">
+          <a class="nav-link" href="#gallery">Gallery</a>
+        </li>
+         <li class="nav-item">
+          <a class="nav-link" href="#book">Book</a>
+        </li>
+      </ul>
+      <form class="d-flex">
+        <input class="form-control me-2" type="text" placeholder="Search">
+        <button class="btn btn-primary" type="button">Search</button>
+      </form>
+    </div>
+  </div>
+</nav> 
+
+    <!-- NAVBAR END -->
+
+    <!-- HOME SECTION -->
+
+<div class="home">
+    <div class="content">
+        <h5>Welcome To Universe</h5>
+        <h1>Visit<span></span> </h1>
+        <p>To empower our clients to explore the world's wonders, creating memories that will last a lifetime.<br> We strive to provide seamless travel experiences that are both enriching and enjoyable.</p>
+        <a href="#book">Book Place</a>
+    </div>
+</div>
+
+    <!-- HOME SECTION END -->
+
+
+    <!-- ABOUT US -->
+
+
+<section class="about" id="about">
+     <div class="container">
+
+        <div class="main-txt text-center ">
+            <h1><span>A</span>bout</h1>            
+        </div>
+         
+         
+        <div class="row" style="margin-top: 50px;">
+
+            <div class="aboutimg col-md-6 py-3 py-md-0">
+                <div class="card">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTmuYjUR4VK8QYaA46BYEnD0MJWOC62OnHrQw&s">
+                </div>
+            </div>
+
+            <div class="aboutinfo col-md-6 py-3 py-md-0">
+                <h2 class="intro">MuteriDunyo</h2>
+                <p>Exploring your dream destination is now easier and more comfortable with our complete travel services. We offer a variety of integrated services to meet all your travel needs, from hotel accommodation, transportation, tourist information, the best guides, delicious culinary delights, to unforgettable travel documentation. .is your one-stop shop for unforgettable travel experiences. We are a team of passionate travel enthusiasts dedicated to creating customized journeys that match your unique interests and budget. Whether you're seeking adventure, relaxation, or cultural immersion, we'll craft an itinerary that exceeds your expectations.</p>
+                <button id="about-btn">Load More...</button>
+            </div>
+
+
+
+            
+            </div>
+
+     </div>
+</section>
+    <!-- ABOUT US END -->
+
+
+    <!-- SERVICE -->
+
+<section class="service" id="service">
+    <div class="container">
+        
+        <div class="main-txt text-center">
+            <h1><span>S</span>ervices</h1>
+        </div>
+
+        <div class="row" style="margin-top: 30px;">
+
+        <div class="hotel col-md-4 py-3 py-md-0">
+            <div class="card">
+                <i class="fas fa-hotel"></i>
+                <div class="card-body">
+                    <h3>Affordable Hotel</h3>
+                    <p>We guarantee the best prices for your hotel bookings. We work closely with various hotel partners to provide the best offers to our customers.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="plane col-md-4 py-3 py-md-0">
+            <div class="card">
+                <i class="fas fa-plane"></i>
+                <div class="card-body">
+                    <h3>Transportation</h3>
+                    <p>We provide tourist bus services for tourist trips to various destinations. Our buses have various seating capacity options and are equipped with various facilities, such as air conditioning, sound system and karaoke.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="bullhorn col-md-4 py-3 py-md-0">
+            <div class="card">
+                <i class="fas fa-bullhorn"></i>
+                <div class="card-body">
+                    <h3>Knowledge</h3>
+                    <p>We provide complete tourist information about various destinations throughout the world. You can find information about tourist attractions, culture, culinary delights and interesting events in each destination.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="hiking col-md-4 py-3 py-md-0 mt-3">
+            <div class="card">
+                <i class="fas fa-hiking"></i>
+                <div class="card-body">
+                    <h3>Best Guide</h3>
+                    <p>We provide professional tour guide services who will accompany you during your trip. Our travel guide will help you explore tourist destinations to the fullest and get an unforgettable experience.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="food col-md-4 py-3 py-md-0 mt-3">
+            <div class="card">
+                <i class="fa-solid fa-bowl-food"></i>
+                <div class="card-body">
+                    <h3>Delicious Food</h3>
+                    <p>We provide culinary tours that will take you to taste various typical foods in each destination.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="camera col-md-4 py-3 py-md-0 mt-3">
+            <div class="card">
+                <i class="fas fa-camera"></i>
+                <div class="card-body">
+                    <h3>Documentation</h3>
+                    <p>We provide free cinematic photo and video creation services. Capture the beautiful moments of your trip with professional photography and videography services. Get high-quality photos and videos ready to share.</p>
+                </div>
+            </div>
+        </div>
+
+        </div>
+
+    </div>
+</section>
+
+
+<!-- SERVICE END -->
+
+
+    <!-- PACKAGES SECTION -->
+
+<section id="packagess" style="background:#f9f9f9;" >
+
+    <div class="main-txt text-center mt-3 mb-5">
+    <h1><span>P</span>ackages</h1>
+   <a href="" style="text-decoration: none; font-size: 15px; color: brown;"><p>Show all packages</p></a>
+</div>
+
+
+
+<div id="carouselExampleAutoplaying" class="container carousel slide" data-bs-ride="carousel">
+  <div class="carousel-inner ">
+    <div class="carousel-item active">
+
+                                                    <!-- slide 1 -->
+
+<div class="slide1 row mb-5" style="margin-top: 30px;">
+
+      <div class="col-md-4 py-3 py-md-0">
+    <div class="card">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQiFJlUZ7igGn3EPNcS0lVQsGiOoey60JUlig&s" height="250px">
+        <div class="card-body">
+           <a href="#book"><h3>Old Trafford</h3></a>
+            <p>Theater of Dreams: Old Trafford's famous nickname reflects the magical aura and extraordinary atmosphere created at every match.</p>
+            <div class="star">
+                <i class="fa-solid fa-star checked"></i>
+                <i class="fa-solid fa-star checked"></i>
+                <i class="fa-solid fa-star checked"></i>
+                <i class="fa-solid fa-star checked"></i>
+                <i class="fa-solid fa-star checked"></i>
+                <i class="fa-solid fa-star checked"></i>
+                <i class="fa-solid fa-star checked"></i>
+                <i class="fa-solid fa-star checked"></i>
+                <i class="fa-solid fa-star checked"></i>
+                <i class="fa-solid fa-star checked"></i>
+                <i class="fa-solid fa-star checked"></i>
+                <i class="fa-solid fa-star checked"></i>
+                <i class="fa-solid fa-star checked"></i>
+                <i class="fa-solid fa-star checked"></i>
+                <i class="fa-solid fa-star checked"></i>
+                <i class="fa-solid fa-star checked"></i>
+                <i class="fa-solid fa-star checked"></i>
+                <i class="fa-solid fa-star checked"></i>
+            </div>
+            <h6>Price: <strong>$500</strong> </h6>
+            <a style="color: blue;" href="#book">Book Now</a>
+        </div>
+    </div>
+</div>
+
+<div class="col-md-4 py-3 py-md-0">
+    <div class="card">
+        <img src="https://c4.wallpaperflare.com/wallpaper/67/283/725/night-lights-in-dubai-wallpaper-preview.jpg" height="250px">
+        <div class="card-body">
+            <a href=""><h3>UEA</h3></a>
+            <p>The United Arab Emirates (UAE), a country located on the Arabian Peninsula, offers a unique blend of modernity and fascinating tradition.</p>
+            <div class="star">
+                <i class="fa-solid fa-star checked"></i>
+                <i class="fa-solid fa-star checked"></i>
+                <i class="fa-solid fa-star checked"></i>
+                <i class="fa-solid fa-star checked"></i>
+                <i class="fa-solid fa-star checked"></i>
+            </div>
+            <h6>Price: <strong>$500</strong> </h6>
+             <a style="color: blue;" href="#book">Book Now</a>
+        </div>
+    </div>
+</div>
+
+<div class="col-md-4 py-3 py-md-0">
+    <div class="card">
+        <img src="https://w0.peakpx.com/wallpaper/728/615/HD-wallpaper-sunny-day-in-london-bridge-westminster-thames-city-boats-big-ben-uk.jpg" height="250px" >
+        <div class="card-body">
+            <a href=""><h3>London</h3></a>
+            <p>London, a vibrant tapestry woven from history, culture, and modern marvels, beckons travelers with its iconic landmarks, charming neighborhoods, and undeniable charm.</p>
+            <div class="star">
+                <i class="fa-solid fa-star checked"></i>
+                <i class="fa-solid fa-star checked"></i>
+                <i class="fa-solid fa-star checked"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+            </div>
+            <h6>Price: <strong>$500</strong> </h6>
+             <a style="color: blue;" href="#book">Book Now</a>
+        </div>
+    </div>
+</div>
+<h1>1</h1>
+<div class="col-md-4 py-3 py-md-0 mb-3">
+    <div class="card">
+        <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiwNK32Rui2trBYPKOk0SY6avFGkbIAzj3_xlPvrq9Gqx7IJtNnQ5JEKyqKXN8HcNfCQ_NDaSjsqgn2Mz7DYXMPrsZ_EOmGl1It-lzGZb2VHXlN4naJaxlbekkb0Njntvnc_Vf9nU1Rl0E/s1600/Cinque-Terre-Italy.jpg" height="250px">
+        <div class="card-body">
+            <a href="#book"><h3>Italy</h3></a>
+            <p>From ancient Roman ruins to the rustic charm of Tuscany, Italy offers unforgettable adventures for travelers from all over the world.</p>
+            <div class="star">
+                <i class="fa-solid fa-star checked"></i>
+                <i class="fa-solid fa-star checked"></i>
+                <i class="fa-solid fa-star checked"></i>
+                <i class="fa-solid fa-star checked"></i>
+                <i class="fa-solid fa-star checked"></i>
+            </div>
+            <h6>Price: <strong>$500</strong> </h6>
+       <a style="color: blue;" href="#book">Book Now</a>
+        </div>
+    </div>
+</div>
+
+<div class="col-md-4 py-3 py-md-0">
+    <div class="card">
+        <img src="https://prod1-api.goldenrama.com/uploads/Spain_Banner_Desktop_2223970845.jpg" height="250px">
+        <div class="card-body">
+           <a href=""><h3>Spain</h3></a>
+            <p>Spain, the land of the sun (Tierra del Sol), offers the perfect blend of natural beauty, rich culture and fascinating history. From golden sandy beaches to enchanting green hills,</p>
+            <div class="star">
+                <i class="fa-solid fa-star checked"></i>
+                <i class="fa-solid fa-star checked"></i>
+                <i class="fa-solid fa-star checked"></i>
+                <i class="fa-solid fa-star checked"></i>
+                <i class="fa-solid fa-star checked"></i>
+            </div>
+            <h6>Price: <strong>$500</strong> </h6>
+ <a style="color: blue;" href="#book">Book Now</a>
+        </div>
+    </div>
+</div>
+
+
+<div class="col-md-4 py-3 py-md-0">
+    <div class="card">
+        <img src="https://res.cloudinary.com/jnto/image/upload/w_1440,h_900,c_fill,f_auto,fl_lossy,q_60/v1/media/filer_public/67/1a/671a2d93-441c-4ac7-92d0-6c91131be76b/shutterstock_1135776710_mu9r7w" height="250px">
+        <div class="card-body">
+            <a href=""><h3>Japan</h3></a>
+            <p>Japan, the land of the enchanting rising sun, offers a unique blend of ancient traditions and modern innovation. From serene Shinto shrines to vibrant neon cities, from towering mountains to peaceful zen gardens.</p>
+            <div class="star">
+                <i class="fa-solid fa-star checked"></i>
+                <i class="fa-solid fa-star checked"></i>
+                <i class="fa-solid fa-star checked"></i>
+                <i class="fa-solid fa-star checked"></i>
+                <i class="fa-solid fa-star checked"></i>
+            </div>
+            <h6>Price: <strong>$500</strong> </h6>
+           <a style="color: blue;" href="#book">Book Now</a>
+        </div>
+    </div>
+
+</div>
+
+</div>
+    </div>
+
+    <!-- slide 1 end -->
+
+                                                         <!-- slide 2 -->
+
+<div class="slide2 carousel-inner ">
+    <div class="carousel-item">
+     
+
+    <div class="row" style="margin-top: 30px;">
+
+      <div class="col-md-4 py-3 py-md-0">
+    <div class="card">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRczGgGd5w9QYC30iEVGHM0lUayFdPMZpUwuQ&s" height="250px">
+        <div class="card-body">
+           <a href="#book"><h3>Dubai</h3></a>
+            <p>Dubai, the futuristic metropolis in the United Arab Emirates, offers a unique blend of modern luxury and exotic desert charm.</p>
+            <div class="star">
+                <i class="fa-solid fa-star checked"></i>
+                <i class="fa-solid fa-star checked"></i>
+                <i class="fa-solid fa-star checked"></i>
+                <i class="fa-solid fa-star checked"></i>
+                <i class="fa-solid fa-star "></i>
+            </div>
+            <h6>Price: <strong>$500</strong> </h6>
+            <a style="color: blue;" href="#book">Book Now</a>
+        </div>
+    </div>
+</div>
+
+<div class="col-md-4 py-3 py-md-0">
+    <div class="card">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR2SMfj8a64MpJr6G12YbYNujbH3IuWSSZljQ&s" height="250px">
+        <div class="card-body">
+            <a href=""><h3>Jurassic World</h3></a>
+            <p>Jurassic World, is not just an ordinary amusement park. This is a revolutionary tourist destination that allows you to directly witness dinosaurs that became extinct millions of years ago, roaming freely in a habitat made as similar to the original as possible.</p>
+            <div class="star">
+                <i class="fa-solid fa-star checked"></i>
+                <i class="fa-solid fa-star checked"></i>
+                <i class="fa-solid fa-star checked"></i>
+                <i class="fa-solid fa-star checked"></i>
+                <i class="fa-solid fa-star checked"></i>
+            </div>
+            <h6>Price: <strong>$500</strong> </h6>
+             <a style="color: blue;" href="#book">Book Now</a>
+        </div>
+    </div>
+</div>
+
+<div class="col-md-4 py-3 py-md-0">
+    <div class="card">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQlNRyDGBq0fu6hss1NQXz0M6wcZqFsbng0xw&s" height="250px" >
+        <div class="card-body">
+            <a href=""><h3>Disneyland</h3></a>
+            <p>The Happiest Place on Earth: A Sparkling Adventure Awaits at Disneyland!
+Welcome to Disneyland, the magical kingdom where dreams come true and childhood fantasies come alive!.</p>
+            <div class="star">
+                <i class="fa-solid fa-star checked"></i>
+                <i class="fa-solid fa-star checked"></i>
+                <i class="fa-solid fa-star checked"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+            </div>
+            <h6>Price: <strong>$500</strong> </h6>
+             <a style="color: blue;" href="#book">Book Now</a>
+        </div>
+    </div>
+</div>
+<h1>2</h1>
+<div class="col-md-4 py-3 py-md-0 mb-5">
+    <div class="card">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTFFMVotSz9UbScR8pjhXsq4yTPuuA5dri-Ig&s" height="250px">
+        <div class="card-body">
+            <a href=""><h3>Malaysia</h3></a>
+            <p>Embark on a captivating journey through this remarkable country, where towering skyscrapers pierce the Kuala Lumpur skyline , ancient temples stand sentinel amidst verdant jungles , and orangutans swing through the dense foliage of Borneo's rainforests .</p>
+            <div class="star">
+                <i class="fa-solid fa-star checked"></i>
+                <i class="fa-solid fa-star checked"></i>
+                <i class="fa-solid fa-star checked"></i>
+                <i class="fa-solid fa-star checked"></i>
+                <i class="fa-solid fa-star checked"></i>
+            </div>
+            <h6>Price: <strong>$500</strong> </h6>
+       <a style="color: blue;" href="#book">Book Now</a>
+        </div>
+    </div>
+</div>
+
+<div class="col-md-4 py-3 py-md-0">
+    <div class="card">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQmPujaBljjIsRAwHIMfR0wLRbxqLGyA5Sp1g&s" height="250px">
+        <div class="card-body">
+           <a href=""><h3>Rome</h3></a>
+            <p>Rome, the captivating capital of Italy, is a city where history whispers from every cobblestone street and ancient monument stands as a testament to a glorious past.</p>
+            <div class="star">
+                <i class="fa-solid fa-star checked"></i>
+                <i class="fa-solid fa-star checked"></i>
+                <i class="fa-solid fa-star checked"></i>
+                <i class="fa-solid fa-star checked"></i>
+                <i class="fa-solid fa-star checked"></i>
+            </div>
+            <h6>Price: <strong>$500</strong> </h6>
+ <a style="color: blue;" href="#book">Book Now</a>
+        </div>
+    </div>
+</div>
+
+
+<div class="col-md-4 py-3 py-md-0">
+    <div class="card">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTCPKV0jRMkMObGFxOTk4TN5NDUVsj7o7_ZgQ&s" height="250px">
+        <div class="card-body">
+            <a href=""><h3>India</h3></a>
+            <p>India, a kaleidoscope of colors, cultures, and traditions, beckons travelers with its captivating charm. From the majestic Himalayas to the serene beaches of Goa, from the bustling metropolises to the tranquil ashrams, India offers an unforgettable adventure for every soul.</p>
+            <div class="star">
+                <i class="fa-solid fa-star checked"></i>
+                <i class="fa-solid fa-star checked"></i>
+                <i class="fa-solid fa-star checked"></i>
+                <i class="fa-solid fa-star checked"></i>
+                <i class="fa-solid fa-star checked"></i>
+            </div>
+            <h6>Price: <strong>$500</strong> </h6>
+           <a style="color: blue;" href="#book">Book Now</a>
+        </div>
+    </div>
+
+</div>
+
+</div>
+    </div>
+    </div>
+</div>
+
+<!-- slide 2 end -->
+
+
+<!-- slide 3 -->
+
+<div class="carousel-inner">
+    <div class="carousel-item">
+     
+     <div class="row" style="margin-top: 30px;">
+
+        <div class="col-md-4 py-3 py-md-0">
+    <div class="card">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRgyE2PnE-a92RoKdUvfFIi9zVxebRgnvhGzg&s" height="250px">
+        <div class="card-body">
+           <a href=""><h3>France</h3></a>
+            <p>Bonjour! Embark on an unforgettable French Adventure
+France, the land of romance, delectable cuisine, and captivating history, beckons travelers from all corners of the globe.</p>
+            <div class="star">
+                <i class="fa-solid fa-star checked"></i>
+                <i class="fa-solid fa-star checked"></i>
+                <i class="fa-solid fa-star checked"></i>
+                <i class="fa-solid fa-star checked"></i>
+                <i class="fa-solid fa-star "></i>
+            </div>
+            <h6>Price: <strong>$500</strong> </h6>
+            <a style="color: blue;" href="#book">Book Now</a>
+        </div>
+    </div>
+</div>
+
+<div class="col-md-4 py-3 py-md-0">
+    <div class="card">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQOXLEyTSfcxseDyfuvTSit4XZhAiv8s0OZHQ&s" height="250px">
+        <div class="card-body">
+            <a href=""><h3>Barcelona</h3></a>
+            <p>¡Hola! Barcelona Awaits <br>Unveiling the Catalan Capital's Magic
+Barcelona, the vibrant capital of Catalonia, beckons you with its sun-drenched beaches, captivating architecture, and infectious energy.  This city seamlessly blends its rich history with modern flair.</p>
+            <div class="star">
+                <i class="fa-solid fa-star checked"></i>
+                <i class="fa-solid fa-star checked"></i>
+                <i class="fa-solid fa-star checked"></i>
+                <i class="fa-solid fa-star checked"></i>
+                <i class="fa-solid fa-star checked"></i>
+            </div>
+            <h6>Price: <strong>$500</strong> </h6>
+             <a style="color: blue;" href="#book">Book Now</a>
+        </div>
+    </div>
+</div>
+
+<div class="col-md-4 py-3 py-md-0">
+    <div class="card">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ_vQHqjnyiVq4ylEa5QQoOjPFO1pQEFty1EA&s" height="250px" >
+        <div class="card-body">
+            <a href=""><h3>Wae Rebo</h3></a>
+            <p>
+Embark on an Enchanting Journey to Wae Rebo Unveiling the Secrets of Flores' Hidden Gem <br>
+Nestled amidst the lush rainforests and towering mountains of Flores, Indonesia, lies Wae Rebo, a traditional village that epitomizes the beauty and cultural richness of the island.</p>
+            <div class="star">
+                <i class="fa-solid fa-star checked"></i>
+                <i class="fa-solid fa-star checked"></i>
+                <i class="fa-solid fa-star checked"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+            </div>
+            <h6>Price: <strong>$500</strong> </h6>
+             <a style="color: blue;" href="#book">Book Now</a>
+        </div>
+    </div>
+</div>
+     <h1>3</h1>
+<div class="col-md-4 py-3 py-md-0 mb-5">
+    <div class="card">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQZ9c_BXXgDKQtNGcUD2CHJaYawQ7bJ0BigSQ&s" height="250px">
+        <div class="card-body">
+            <a href=""><h3>Laboan Bajo</h3></a>
+            <p>
+Labuan Bajo, a charming port town nestled on the western tip of Flores Island, Indonesia, serves as the gateway to the breathtaking Komodo National Park.</p>
+            <div class="star">
+                <i class="fa-solid fa-star checked"></i>
+                <i class="fa-solid fa-star checked"></i>
+                <i class="fa-solid fa-star checked"></i>
+                <i class="fa-solid fa-star checked"></i>
+                <i class="fa-solid fa-star checked"></i>
+            </div>
+            <h6>Price: <strong>$500</strong> </h6>
+       <a style="color: blue;" href="#book">Book Now</a>
+        </div>
+    </div>
+</div>
+
+<div class="col-md-4 py-3 py-md-0 ">
+    <div class="card">
+        <img src="https://vj-prod-website-cms.s3.ap-southeast-1.amazonaws.com/g2-1716175948461.jpg" height="250px">
+        <div class="card-body">
+           <a href=""><h3>China</h3></a>
+            <p>China, a land of captivating contrasts, beckons travelers with its rich history, vibrant culture, and breathtaking landscapes.</p>
+            <div class="star">
+                <i class="fa-solid fa-star checked"></i>
+                <i class="fa-solid fa-star checked"></i>
+                <i class="fa-solid fa-star checked"></i>
+                <i class="fa-solid fa-star checked"></i>
+                <i class="fa-solid fa-star checked"></i>
+            </div>
+            <h6>Price: <strong>$500</strong> </h6>
+ <a style="color: blue;" href="#book">Book Now</a>
+        </div>
+    </div>
+</div>
+
+
+<div class="col-md-4 py-3 py-md-0">
+    <div class="card">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR663PGgOlP-Jx5oByLn7fYjdJ63gda8E3vxA&s" height="250px">
+        <div class="card-body">
+            <a href=""><h3>Swedia</h3></a>
+            <p>Sweden, a land of captivating beauty and rich traditions, beckons travelers with its serene landscapes, vibrant cities, and charming towns.</p>
+            <div class="star">
+                <i class="fa-solid fa-star checked"></i>
+                <i class="fa-solid fa-star checked"></i>
+                <i class="fa-solid fa-star checked"></i>
+                <i class="fa-solid fa-star checked"></i>
+                <i class="fa-solid fa-star checked"></i>
+            </div>
+            <h6>Price: <strong>$500</strong> </h6>
+           <a style="color: blue;" href="#book">Book Now</a>
+        </div>
+    </div>
+   
+   </div>
+     </div>
+    </div>
+</div>
+
+<!-- slide 3 end -->
+
+<!-- next prev button -->
+
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+    <span class="slide carousel-control-prev-icon bg-dark" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+    <span class="slide carousel-control-next-icon bg-dark" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+
+  <!-- next prev button end -->
+  
+
+</div>
+</section>
+
+   <!-- PACKAGES SECTION END -->
+
+
+
+<!-- gallery start -->
+
+<section class="gallery" id="gallery">
+    <div class="container">
+        
+        <div class="main-txt">
+            <h1><span>G</span>allery <br> <i class="fa-solid fa-arrow-down"></i></h1>
+        </div>
+
+        <div class="galleryimg row">
+
+            <div class="col-md-2 py-3 py-md-0">
+                <div class="card">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRfsynVvKfq-hFSHXrpL5Y1o3YxWij0copI5w&s" height="230px">
+                </div>
+            </div>
+
+               <div class="col-md-2 py-3 py-md-0">
+                <div class="card">
+                    <img src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQX1GKSzDChVvWsIpFfj_Nbuo1xaFC0gHCP64pRr1emSwlhSiP0WrZAXXWsQM9V" height="230px">
+                </div>
+            </div>
+
+            <div class="col-md-2 py-3 py-md-0">
+                <div class="card">
+                    <img src="https://i.natgeofe.com/n/e791cec8-70ae-46ed-90da-184d09d7ed22/old-town-lucerne.jpg?w=1280&h=853" height="230px">
+                </div>
+            </div>
+
+            <div class="col-md-2 py-3 py-md-0">
+                <div class="card">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSW-njhceNP_XRh70aSjJIrtc3e1j0Rx5Kv4w&s" height="230px">
+                </div>
+            </div>
+
+            <div class="col-md-2 py-3 py-md-0">
+                <div class="card">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ__dzX3FhU3O3rC-oA0lkAWvKw--8ADxi1Ag&s" height="230px">
+                </div>
+            </div>
+
+            <div class="col-md-2 py-3 py-md-0">
+                <div class="card">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRtWsfHDvgpTbvvG5R2yUIC00H-y3SrvabCcQ&s" height="230px">
+                </div>
+            </div>
+
+         
+
+        </div>
+
+
+    </div>
+</section>
+
+
+<!-- gallery end -->
+
+    <!-- BOOK SECTION -->
+
+    <section class="book" id="book">
+        <div class="container">
+            
+            <div class="main-txt text-center">
+                <h1><span>B</span>ook</h1>
+            </div>
+
+            <div class="row">
+                
+                <div class="indoimg col-md-6 py-3 py-md-0 mt-5 ">
+                    <div class="card">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ13bX3gJCnX1pMVvKloxaOvBZ0qUrFR_XddA&s">
+                    </div>
+                </div>
+
+                 <div class="formlist col-md-6 py-3 py-md-0 ">
+                   <form id="myForm" action="#">
+
+                     <h5 class="text-center mt-2">Name</h4>
+        <input type="text" class="form-control" id="Name" name="input1" placeholder="Ex: Jacob" required>
+
+             <h5 class="text-center mt-2">Where To?</h4>
+        <input type="text" class="form-control" id="WhereTo" name="input1" placeholder="Ex: Turkey" required>
+
+ <h5 class="text-center mt-2">Packages</h4>
+        <input type="text" class="form-control" id="Packages" name="input2" placeholder="Ex: TurkeyPackages" required>
+
+                      <h5 class="text-center mt-2">Arrivals</h4>
+        <input type="date" class="form-control" id="Arrivals" name="date1" required >
+
+                   <h5 class="text-center mt-2">Leaving</h4>
+        <input type="date" class="form-control" id="Leaving" name="date2"required>
+
+          <input type="" class="form-control" id="Phone" name="input4" placeholder="Ex: 0895600410522" required>
+
+        <input type="email" class="form-control" id="Email" name="input3" placeholder="Enter your Em@il" required>
+
+        
+
+                       <input type="submit" value="Book Now" class="submit" id="book" required>
+
+                   </form>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- BOOK SECTION END -->
+
+
+
+
+
+
+
+
+ <!-- footer-->
+
+<footer class="footer" id="footer">
+<a id="logo" class="navbar-brand" href=""><span>M</span>uteri<span>D</span>unyo</a>
+<p>We put our clients at the heart of everything we do, prioritizing their needs and preferences above all else.</p>
+<div class="social-links">
+    <a href="https://www.instagram.com/puaiiq/"><i class="fa-brands fa-instagram"></i></a>
+    <a href=""><i class="fa-brands fa-twitter"></i></a>
+    <a href=""><i class="fa-brands fa-facebook"></i></a>
+    <a href=""><i class="fa-brands fa-youtube"></i></a>
+    <a href=""><i class="fa-brands fa-whatsapp"></i></a>
+</div>
+
+<div class="copyright">
+    <p>&copy;FMR.StartUp</p>
+</div>
+
+</footer>
+
+
+
+
+<!-- footer end -->
+
+
+
+<script type="text/javascript">
+
+const myForm = document.getElementById('myForm');
+const Name = document.getElementById('Name');
+const WhereTo = document.getElementById('WhereTo');
+const Packages = document.getElementById('Packages');
+const Arrivals = document.getElementById('Arrivals');
+const Leaving = document.getElementById('Leaving');
+const Phone = document.getElementById('Phone')
+const Email = document.getElementById('Email');
+
+myForm.addEventListener('submit', function(event) {
+    event.preventDefault();
+
+    const formData = {
+        Name:Name.value,
+        WhereTo: WhereTo.value,
+        Packages: Packages.value,
+        Arrivals: Arrivals.value,
+        Leaving: Leaving.value,
+        Phone: Phone.value, 
+        Email: Email.value
+    };
+
+    console.log('Form Data:', formData);
+    console.log(length)
+
+});
+
+
+</script>
+
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"crossorigin="anonymous"></script>
+
+<script type="text/javascript">
+    ScrollReveal({
+            reser : true,
+            distance :'100px',
+            duration : 2700,
+            delay:400 
+        });
+
+             //NAVBAR 
+          ScrollReveal().reveal('.navbar', {delay :300, origin: 'top' });
+          ScrollReveal().reveal('.main-txt', {delay :300, origin: 'top' });
+           // NAVBAR END
+
+          // home
+          ScrollReveal().reveal('.home .content', {delay :300, origin: 'bottom' });
+          // home end
+
+          // about
+          ScrollReveal().reveal('.aboutimg', {delay :300, origin: 'left' });
+          ScrollReveal().reveal('.aboutinfo', {delay :300, origin: 'right' });
+          // about end
+
+          // service
+          ScrollReveal().reveal('.hotel', {delay :300, origin: 'left' });
+          ScrollReveal().reveal('.plane', {delay :300, origin: 'bottom' });
+          ScrollReveal().reveal('.bullhorn', {delay :300, origin: 'right' });
+          ScrollReveal().reveal('.hiking', {delay :300, origin: 'right' });
+          ScrollReveal().reveal('.food', {delay :300, origin: 'top' });
+          ScrollReveal().reveal('.camera', {delay :300, origin: 'left' });
+          // service end
+
+          // packages
+          ScrollReveal().reveal('.slide1', {delay :300, origin: 'bottom' });
+          // Packages end
+
+          // gallery
+          ScrollReveal().reveal('.galleryimg', {delay :100, origin: 'left' });
+          // gallery end
+
+          // book
+          ScrollReveal().reveal('.indoimg', {delay :300, origin: 'left' });
+          ScrollReveal().reveal('.formlist', {delay :300, origin: 'bottom' });
+          // book end
+
+          // footer
+          ScrollReveal().reveal('.social-links', {delay :300, origin: 'right' });
+          // footer end
+
+</script>
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
